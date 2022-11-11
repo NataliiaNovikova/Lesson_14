@@ -1,0 +1,273 @@
+body {
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.header {
+}
+
+.page {
+}
+
+.page__container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.page__container > * {
+    margin-bottom: 50px;
+}
+
+/*  */
+.block {
+}
+.block__row {
+    border: 5px solid rgb(212, 225, 65);
+}
+.block__element {
+    border: 5px solid rgb(65, 225, 132);
+}
+.block__element1 {
+}
+.block__element2 {
+    display: inline-block;
+}
+.block__element3 {
+    display: inline;
+}
+.block__element4 {
+}
+.block__content {
+}
+
+/*  */
+.flex {
+    padding: 0 20px;
+}
+.flex__row {
+    border: 5px solid royalblue;
+    display: flex;
+    width: 600px;
+    height: 150px;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    align-items: baseline;
+
+    /* flex-flow: row wrap-reverse; */
+}
+.flex__element {
+    border: 5px solid rgb(225, 121, 65);
+}
+.flex__element1 {
+    order: 3;
+    align-self: flex-start;
+}
+.flex__element2 {
+    font-size: 40px;
+    order: 1;
+}
+.flex__element3 {
+    order: 4;
+    align-self: flex-end;
+}
+.flex__element4 {
+    order: 2;
+    align-self: center;
+    flex-basis: 200px;
+}
+.flex__content {
+}
+
+.flex-next1 {
+    padding: 0 20px;
+}
+.flex__row-next1 {
+    border: 5px solid rgb(65, 212, 225);
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex__element-next1 {
+    border: 5px solid rgb(222, 65, 225);
+}
+.flex__element1-next1 {
+    order: 2;
+    flex: 1 0 50%;
+}
+.flex__element2-next1 {
+    order: 4;
+    align-self: flex-start;
+    flex-basis: 100px;
+}
+.flex__element3-next1 {
+    order: 1;
+    align-self: flex-end;
+}
+.flex__element4-next1 {
+    order: 3;
+}
+.flex__content-next1 {
+}
+
+.footer {
+}
+
+/* Приклад з текстом */
+.page__block-exp1 {
+}
+.text-block-exp1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.text-block-exp1__title {
+}
+
+.title {
+    font-size: 24px;
+    background-color: aquamarine;
+}
+.text-block-exp1__sub-title {
+    font-size: 24px;
+}
+.text-block-exp1__link {
+    line-height: 1.2;
+}
+.text-block-exp1__text {
+}
+
+/* Приклад з картками */
+.cards-exp2__cont {
+    display: flex;
+    margin: 0px -15px;
+    /* background: #000; */
+}
+
+.cards-exp2 {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.cards-exp2__column {
+    /* Flex-элемент может увеличиваться, не может уменьшаться. 
+    Базовый размер 33.33%. */
+    flex: 0 1 33.33%;
+    padding: 0px 15px;
+}
+.cards-exp2__item {
+    background-color: rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    min-height: 100%;
+}
+.item-card-exp2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+.item-card-exp2__image img {
+    min-width: 100%;
+}
+.item-card-exp2__text {
+    color: darkgreen;
+    flex-grow: 1;
+}
+.item-card-exp2__button {
+    background-color: blue;
+    padding: 5px;
+}
+
+/* 
+Приклад з width
+Приклад з текстом та псевдоелементом */
+
+.link {
+    color: purple;
+    align-items: center;
+    background-color: chartreuse;
+    display: inline-flex;
+}
+.link::before{
+	content:"";
+	flex: 0 0 20px;
+	width: 20px;
+	height: 20px;
+	background-color: black;
+}
+
+/* Приклад з width №2
+Приклад з текстом та зображенням */
+
+.block {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.block__icon {
+    flex: 0 0 50px;
+    height: 50px;
+    background-color: #000;
+}
+
+/* Приклад з float */
+.float__exp5 {
+}
+.float-exp5__title {
+}
+.title {
+}
+.float-exp5__cont {
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+}
+.float-exp5__item {
+}
+.item {
+    display: flex;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.296);
+    padding: 15px;   
+}
+.item:nth-child(even){
+	flex-direction: row-reverse;
+}
+
+/* @media (max-width: 768px){
+	.item {
+		flex-direction: column-reverse;
+	}
+	.item:nth-child(even) {
+		flex-direction: column-reverse;
+	}
+} */
+
+.item__image {
+    flex: 0 0 100px;
+}
+
+.item__image img{
+    min-width: 100%;
+}
+
+.item__text {
+    line-height: 1.2;
+}
+
+/* Приклад з float 
+Обтікання
+float: left / right;
+*/
+.image{
+	/* Обтікання */
+	float: left;
+	margin-right: 20px;
+}
